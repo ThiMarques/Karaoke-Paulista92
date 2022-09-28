@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div className="grid-flow-col justify-between m-auto">
                 <h2 className="text-title-color flex justify-self-center p-8">HOME</h2>
                 <section className="flex-col grid justify-items-stretch place-content-center">
                     <p className=" text-title-color flex justify-self-center p-8">

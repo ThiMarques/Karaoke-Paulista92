@@ -8,7 +8,7 @@ import { ImCheckmark } from "react-icons/im";
 export function CardPromotion() {
     return (
         <Card className="flex mr-0.5 items-end justify-center flex-wrap gap-6">
-            <Card.Body className="flex m-1.5 px-12 shadow-boxShadow bg-background-color">
+            <Card.Body className="grid m-1.5 shadow-boxShadow border-b-base-color border-4 text-center px-12 p-[3.625rem 2rem]">
                 <Card.Header className="text-text-color"> Minimo de 15 pessoas <br /> </Card.Header>
                 <ListGroup variant="flush" className="text-text-color">
                     <ListGroup.Item><ImCheckmark />4 horas de permanencia no box</ListGroup.Item>
@@ -28,8 +28,8 @@ export function CardPromotion() {
 
 export function CardRooms() {
     return (
-        <Card className="flex mr-0.5 items-end justify-center flex-wrap gap-6 content-center place-content-center grid-cols-2">
-            <Card.Body className="flex m-1.5 px-12 shadow-boxShadow bg-background-color">
+        <Card className="flex mr-0.5 items-end justify-center flex-wrap gap-6 content-center place-content-center grid-cols-2 ">
+            <Card.Body className=" grid m-1.5 shadow-boxShadow border-b-base-color border-4 text-center px-12 p-[3.625rem 2rem]">
                 <Card.Title className="text-title-color">Sala 03</Card.Title>
                 <Card.Text className="text-text-color">
                     Capacidade máxima: 30 pessoas. <br />
@@ -37,7 +37,7 @@ export function CardRooms() {
                 </Card.Text>
             </Card.Body>
 
-            <Card.Body className="flex m-1.5 px-12 shadow-boxShadow bg-background-color">
+            <Card.Body className=" grid m-1.5 shadow-boxShadow border-b-base-color border-4 text-center px-12 p-[3.625rem 2rem]">
                 <Card.Title className="text-title-color">Sala 04</Card.Title>
                 <Card.Text className="text-text-color">
                     Capacidade máxima: 20 pessoas. <br />
@@ -45,7 +45,7 @@ export function CardRooms() {
                 </Card.Text>
             </Card.Body>
 
-            <Card.Body className="flex m-1.5 px-12 shadow-boxShadow bg-background-color">
+            <Card.Body className=" grid m-1.5 shadow-boxShadow border-b-base-color border-4 text-center px-12 p-[3.625rem 2rem]">
                 <Card.Title className="text-title-color">Sala 06</Card.Title>
                 <Card.Text className="text-text-color">
                     Capacidade máxima: 17 pessoas. <br />
@@ -53,7 +53,7 @@ export function CardRooms() {
                 </Card.Text>
             </Card.Body>
 
-            <Card.Body className="flex m-1.5 px-12 shadow-boxShadow bg-background-color">
+            <Card.Body className=" grid m-1.5 shadow-boxShadow border-b-base-color border-4 text-center px-12 p-[3.625rem 2rem]">
                 <Card.Title className="text-title-color">Sala 07</Card.Title>
                 <Card.Text className="text-text-color">
                     Capacidade máxima: 12 pessoas. <br />
@@ -67,7 +67,7 @@ export function CardRooms() {
 export function CardService() {
     return (
         <Card className="flex mr-0.5 items-end justify-center flex-wrap gap-6 content-center place-content-center grid-cols-3">
-            <Card.Body className="flex m-1.5 px-12 shadow-boxShadow bg-background-color">
+            <Card.Body className="grid m-1.5 shadow-boxShadow border-b-base-color border-4 text-center px-12 p-[3.625rem 2rem]">
                 <IoIosRestaurant />
                 <Card.Title className="text-title-color">Porções</Card.Title>
                 <Card.Text className="text-text-color">
@@ -83,7 +83,7 @@ export function CardService() {
                 </Card.Text>
             </Card.Body>
 
-            <Card.Body className="flex m-1.5 px-12 shadow-boxShadow bg-background-color">
+            <Card.Body className="grid m-1.5 shadow-boxShadow border-b-base-color border-4 text-center px-12 p-[3.625rem 2rem]">
                 <IoIosWine />
                 <Card.Title className="text-title-color">Bebidas</Card.Title>
                 <Card.Subtitle className="text-text-color">Sem álcool:</Card.Subtitle>
@@ -97,7 +97,7 @@ export function CardService() {
                 </Card.Text>
             </Card.Body>
 
-            <Card.Body className="flex m-1.5 px-12 shadow-boxShadow bg-background-color">
+            <Card.Body className="grid m-1.5 shadow-boxShadow border-b-base-color border-4 text-center px-12 p-[3.625rem 2rem]">
                 <IoIosBeer />
                 <Card.Title className="text-title-color">Bebidas</Card.Title>
                 <Card.Subtitle className="text-text-color">Com álcool:</Card.Subtitle>
