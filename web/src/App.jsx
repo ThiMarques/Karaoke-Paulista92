@@ -13,7 +13,7 @@ import Service from './Screens/Service';
 function App() {
     return (
       <HashRouter>
-        <div className="App">
+        <div className="App bg-background-color mx-6">
           <div>
             <nav>
               <header className="text-title-color grid flex-col place-content-center">

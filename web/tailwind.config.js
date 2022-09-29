@@ -5,12 +5,24 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'title-font': ['Poppins', 'sans-serif'],
+      'body-font': ['DM sans', 'sans-serif'],
+    },
+    fontSize: {
+      'title-font-size': ['1.875rem'],
+      'subtitle-font-size': ['1rem'],
+    },
     extend: {
       colors: {
         'title-color': '#44cd5e',
         'base-color': '#BB32A1',
+        'base-color-alt': '#F9557B',
         'text-color': '#757575',
         'background-color': '#111111',
+      },
+      padding: {
+        '--header-height': '4.5rem',
       },
     },
     boxShadow: {
