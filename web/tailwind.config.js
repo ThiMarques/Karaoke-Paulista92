@@ -13,12 +13,16 @@ module.exports = {
       'title-font-size': ['1.875rem'],
       'subtitle-font-size': ['1rem'],
     },
+    borderRadius: {
+      'borderCard': ['0.25rem 0.25rem 0 0'],
+    },
     extend: {
       colors: {
         'title-color': '#44cd5e',
         'base-color': '#BB32A1',
         'base-color-alt': '#F9557B',
         'text-color': '#757575',
+        'text-color-light': '#fafafa',
         'background-color': '#111111',
       },
       padding: {
