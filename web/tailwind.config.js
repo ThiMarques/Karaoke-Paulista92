@@ -5,6 +5,9 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    screens: {
+      'desktop': '1200px',
+    },
     fontFamily: {
       'title-font': ['Poppins', 'sans-serif'],
       'body-font': ['DM sans', 'sans-serif'],

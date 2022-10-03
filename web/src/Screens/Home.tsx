@@ -5,30 +5,30 @@ import amigosKaraoke from './../assets/amigosKaraoke.png'
 class Home extends Component {
     render() {
         return (
-            <section className="p-[calc(5rem + -p--header-height)] overflow-hidden">
-                <div className="grid-flow-col justify-between m-auto grid gap-8">
+            <section className="p-[calc(5rem + -p--header-height)] overflow-hidden desktop:p-[10rem 0]">
+                <div className="m-0 grid gap-8 desktop:max-w-desktop desktop:mx-full desktop:grid-flow-col desktop:justify-between ">
                     <h2 className="text-title-color flex justify-self-center p-8">HOME</h2>
-                    <img 
-                        src={amigosKaraoke} 
-                        className="relative right-[2.93rem]"
-                    />
-                    <section className="flex-col grid justify-items-stretch place-content-center">
-                        <div className='mx-6 text-center'>
-                            <h2 className=" text-title-color flex text-center antialiased font-bold p-8 font-title-font text-title-font-size">
-                                Procurando um lugar pra se divertir e ter uma experiência única com os seus amigos?
-                            </h2>
-                            <p className="text-text-color flex justify-self-center p-8 mb-8">
-                                Aqui você encontra os melhores serviços de karaokê box em São Paulo !
-                                <br />
-                                Salas exclusivas aos grupos, com ar condicionado, iluminação personalizada, atendimento de bar e repertório contendo canções tanto nacionas quanto internacionais.
-                            </p>
-                            <button className="bg-base-color h-14 inline-flex items-center py-0 px-8 rounded font-medium text-subtitle-font-size font-body-font transition hover:bg-base-color-alt ">
-                                <span className="text-white">
-                                    Faça já a sua reserva conosco.
-                                </span>
-                            </button>
-                        </div>
-                    </section>
+                    <div className="relative rounded-[0.25rem] before:content-[''] before:h-full before:w-full before:bg-base-color before:absolute before:top-[-16.8%] before:left-[16.7%] before:rounded-[0.25rem] before:z-0 ">
+                        <img 
+                            src={amigosKaraoke} 
+                            className="relative right-[2.93rem] rounded-[0.25rem]"
+                        />
+                    </div>           
+                    <div className='mx-6 mb-4 text-center desktop:order-0 desktop:max-w-sm desktop:text-left'>
+                        <h2 className="text-title-color font-bold text-title-font-size font-title-font subpixel-antialiased text-center desktop:text-left">
+                            Procurando um lugar pra se divertir e ter uma experiência única com os seus amigos?
+                        </h2>
+                        <p className="mb-8">
+                            Aqui você encontra os melhores serviços de karaokê box em São Paulo !
+                            <br />
+                            Salas exclusivas aos grupos, com ar condicionado, iluminação personalizada, atendimento de bar e repertório contendo canções tanto nacionas quanto internacionais.
+                        </p>
+                        <button className="bg-base-color text-text-color-light h-14 inline-flex items-center py-0 px-8 rounded-[0.25rem] font-medium text-subtitle-font-size font-body-font transition hover:bg-base-color-alt ">
+                            <span className="text-white">
+                                Faça já a sua reserva conosco.
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </section>
         );

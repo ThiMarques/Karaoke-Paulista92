@@ -13,7 +13,7 @@ import Service from './Screens/Service';
 function App() {
     return (
       <HashRouter>
-        <div className="App bg-background-color mx-6 text-text-color">
+        <div className="App bg-background-color text-text-color font-normal text-subtitle-font-size font-body-font subpixel-antialiased">
           <div>
             <nav>
               <header className="text-title-color grid flex-col place-content-center">
@@ -41,13 +41,27 @@ function App() {
                   </li>
                 </ul>
                 <div className="content">
-                  <Home />
-                  <Promotions />
-                  <Rooms />
-                  <Service />
-                  <Map />
-                  <Contact />
-                  <Footer />
+                  <section>
+                    <Home />
+                  </section>
+                  <section>
+                    <Promotions />
+                  </section>
+                  <section>
+                    <Rooms />
+                  </section>
+                  <section>
+                    <Service />
+                  </section>
+                  <section>
+                    <Map />
+                  </section>
+                  <section>
+                    <Contact />
+                  </section>
+                  <section>
+                    <Footer />
+                  </section>
                 </div>
               </div>
             </nav>
