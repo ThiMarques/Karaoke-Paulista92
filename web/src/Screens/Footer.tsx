@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
-import { IoLogoFacebook, IoLogoInstagram } from "react-icons/io";
+import instagram from './../assets/instagram.svg';
+import facebook from './../assets/facebook.svg';
 
 class Footer extends Component {
     render() {
@@ -19,14 +20,14 @@ class Footer extends Component {
                             target="_blank"
                             className="inline-block"
                         >
-                            <IoLogoInstagram className="text-2xl"/>
+                            <img src={instagram} className="text-2xl"/>
                         </a>
                         <a 
                             href="https://www.facebook.com/" 
                             target="_blank"
                             className="inline-block"
                         >
-                            <IoLogoFacebook className="text-2xl"/>
+                            <img src={facebook} className="text-2xl fill-text-color-light"/>
                         </a>
                     </div>
                 </div>

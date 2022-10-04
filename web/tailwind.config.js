@@ -28,9 +28,6 @@ module.exports = {
         'text-color-light': '#fafafa',
         'background-color': '#111111',
       },
-      padding: {
-        '--header-height': '4.5rem',
-      },
     },
     boxShadow: {
       'boxShadow': '0px 0px 12px rgb(0 0 0 / 80%);'

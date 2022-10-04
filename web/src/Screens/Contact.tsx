@@ -2,12 +2,15 @@ import React, { Component } from "react";
 
 import { IoLogoWhatsapp, IoIosCall, IoIosPin, IoIosMail } from 'react-icons/io'
 
-import {  } from 'react-native-ionicons'
+import whatsapp from './../assets/whatsapp.svg'
+import phone from './../assets/phone.svg'
+import mapPin from './../assets/map-pin.svg'
+import mail from './../assets/mail.svg'
 
 class Contact extends Component {
     render() {
         return (
-            <section className="p-[calc(5rem + -p--header-height)] desktop:p-[10rem 0]">
+            <section className="py-36 px-0 desktop:p-[10rem 0]">
                 <div className="mx-6 grid gap-16">
                     <div>
                         <h2 className=" text-title-color flex text-center subpixel-antialiased font-bold p-8 font-title-font text-title-font-size">
@@ -22,16 +25,15 @@ class Contact extends Component {
                             target="_blank"
                             className="bg-base-color h-14 inline-flex items-center py-0 px-8 mr-[0.625rem] rounded-[0.25rem] font-medium text-2xl font-body-font transition hover:bg-base-color-alt "
                         >
-                            <IoLogoWhatsapp className=""/>
-                            
+                            <img src={whatsapp} className="before:text-text-color-light text-2xl mr-[0.625rem]"/>
                             <p className="text-text-color-light">Entrar em contato</p>
                         </a>
                     </div>
                     <div>
-                        <ul className="gap-8">
-                            <li className="flex items-center"><IoIosCall className="text-base-color text-2xl mr-[0.625rem]"/>(11) 91234-5678</li>
-                            <li className="flex items-center"><IoIosPin className="text-base-color text-2xl mr-[0.625rem]"/>R: L`amour 532</li>
-                            <li className="flex items-center"><IoIosMail className="text-base-color text-2xl mr-[0.625rem]"/>gmailficticio@gmail.com</li>
+                        <ul className="gap-8 grid ">
+                            <li className="flex items-center"><img src={phone} className="before:text-text-color-light text-2xl mr-[0.625rem]"/>(11) 91234-5678</li>
+                            <li className="flex items-center"><img src={mapPin} className="before:text-text-color-light text-2xl mr-[0.625rem]"/>R: L`amour 532</li>
+                            <li className="flex items-center"><img src={mail} className="before:text-text-color-light text-2xl mr-[0.625rem]"/>gmailficticio@gmail.com</li>
                         </ul>
                     </div>
                 </div>

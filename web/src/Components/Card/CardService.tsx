@@ -1,14 +1,16 @@
 import React from "react";
-import Card from 'react-bootstrap/Card'
+import Card from 'react-bootstrap/Card';
 import ListGroup from "react-bootstrap/esm/ListGroup";
 
-import { IoIosBeer, IoIosRestaurant, IoIosWine } from "react-icons/io"
+import prato from './../../assets/prato.png';
+import copo from './../../assets/copo.png';
+import bebidas from './../../assets/bebidas.png';
 
 export function CardService() {
     return (
         <Card className="mx-6 flex flex-wrap justify-center">
                 <Card.Body className="py-[3.625rem] px-8 m-1.5 border-transparent border-b-base-color border-4 shadow-boxShadow rounded-borderCard text-center grow shrink basis-[150px]">
-                    <IoIosRestaurant className="text-base-color w-1/5 h-auto"/>
+                    <img src={prato} className="w-[20%] h-auto mx-auto" alt="" />
                     <Card.Title className="my-4 justify-items-center">Porções</Card.Title>
                     <Card.Text className="mx-6 text-center">
                         <ListGroup.Item>Mini esfihas (6 unidades);</ListGroup.Item>
@@ -24,7 +26,7 @@ export function CardService() {
                 </Card.Body>
 
                 <Card.Body className="py-[3.625rem] px-8 m-1.5 border-transparent border-b-base-color border-4 shadow-boxShadow rounded-borderCard text-center grow shrink basis-[150px]">
-                    <IoIosWine className="text-base-color w-1/5 h-auto"/>
+                    <img src={copo} className="w-[20%] h-auto mx-auto" alt="" />
                     <Card.Title className="my-4">Bebidas</Card.Title>
                     <Card.Subtitle className="my-4">Sem álcool:</Card.Subtitle>
                     <Card.Text className="mx-6 text-center">
@@ -38,7 +40,7 @@ export function CardService() {
                 </Card.Body>
 
                 <Card.Body className="py-[3.625rem] px-8 m-1.5 border-transparent border-b-base-color border-4 shadow-boxShadow rounded-borderCard text-center grow shrink basis-[150px]">
-                    <IoIosBeer className="text-base-color w-1/5 h-auto"/>
+                    <img src={bebidas} className="w-[20%] h-auto mx-auto" alt="" />
                     <Card.Title className="my-4">Bebidas</Card.Title>
                     <Card.Subtitle className="my-4">Com álcool:</Card.Subtitle>
                     <Card.Text className="mx-6 text-center">

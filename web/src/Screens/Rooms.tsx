@@ -5,7 +5,7 @@ import { CardRooms } from '../Components/Card/CardRooms';
 class Rooms extends Component {
     render() {
         return (
-            <section className='p-[calc(5rem + -p--header-height)] desktop:p-[10rem 0]'>
+            <section className='py-36 px-0 desktop:p-[10rem 0]'>
                 <div className='mx-6 grid gap-8'>
                     <header className='mb-16 border-b-[1px solid]'>
                         <h2 className="text-title-color font-bold text-title-font-size font-title-font subpixel-antialiased text-center mb-3">Salas</h2>

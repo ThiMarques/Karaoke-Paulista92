@@ -41,27 +41,19 @@ function App() {
                   </li>
                 </ul>
                 <div className="content">
-                  <section>
                     <Home />
-                  </section>
-                  <section>
+                      <div className='flex-col divide-y-0 bg-base-color h-[1px]'></div>
                     <Promotions />
-                  </section>
-                  <section>
+                      <div className='flex-col divide-y-0 bg-base-color h-[1px]'></div>
                     <Rooms />
-                  </section>
-                  <section>
+                      <div className='flex-col divide-y-0 bg-base-color h-[1px]'></div>
                     <Service />
-                  </section>
-                  <section>
+                      <div className='flex-col divide-y-0 bg-base-color h-[1px]'></div>
                     <Map />
-                  </section>
-                  <section>
+                      <div className='flex-col divide-y-0 bg-base-color h-[1px]'></div>
                     <Contact />
-                  </section>
-                  <section>
+                      <div className='flex-col divide-y-0 bg-base-color h-[1px]'></div>
                     <Footer />
-                  </section>
                 </div>
               </div>
             </nav>

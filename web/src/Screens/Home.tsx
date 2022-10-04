@@ -5,9 +5,8 @@ import amigosKaraoke from './../assets/amigosKaraoke.png'
 class Home extends Component {
     render() {
         return (
-            <section className="p-[calc(5rem + -p--header-height)] overflow-hidden desktop:p-[10rem 0]">
+            <section className="py-36 px-0 overflow-hidden desktop:p-[10rem 0]">
                 <div className="m-0 grid gap-8 desktop:max-w-desktop desktop:mx-full desktop:grid-flow-col desktop:justify-between ">
-                    <h2 className="text-title-color flex justify-self-center p-8">HOME</h2>
                     <div className="relative rounded-[0.25rem] before:content-[''] before:h-full before:w-full before:bg-base-color before:absolute before:top-[-16.8%] before:left-[16.7%] before:rounded-[0.25rem] before:z-0 ">
                         <img 
                             src={amigosKaraoke} 

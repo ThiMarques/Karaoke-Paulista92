@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class Map extends Component {
     render() {
         return (
-            <section className='p-[calc(5rem + -p--header-height)] desktop:p-[10rem 0]'>
+            <section className='py-36 px-0 desktop:p-[10rem 0]'>
                 <div className='mx-6 grid gap-8'>
                     <div className='mx-6 text-center '>
                         <h2 className='text-title-color font-bold font-title-font text-title-font-size subpixel-antialiased text-center mb-4'>
