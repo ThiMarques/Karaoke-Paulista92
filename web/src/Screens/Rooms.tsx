@@ -6,7 +6,7 @@ class Rooms extends Component {
     render() {
         return (
             <section className='py-36 px-0 desktop:p-[10rem 0]'>
-                <div className='mx-6 grid gap-8'>
+                <div className='mx-6 grid gap-8 desktop:mx-auto desktop:max-w-[1120px]'>
                     <header className='mb-16 border-b-[1px solid]'>
                         <h2 className="text-title-color font-bold text-title-font-size font-title-font subpixel-antialiased text-center mb-3">Salas</h2>
                         <h3 className='mb-4 text-subtitle-font-size'>

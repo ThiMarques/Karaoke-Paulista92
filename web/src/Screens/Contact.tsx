@@ -11,8 +11,8 @@ class Contact extends Component {
     render() {
         return (
             <section className="py-36 px-0 desktop:p-[10rem 0]">
-                <div className="mx-6 grid gap-16">
-                    <div>
+                <div className="mx-6 grid gap-16 desktop:mx-auto desktop:max-w-[1120px] desktop:grid-flow-col desktop:items-center">
+                    <div className="desktop:max-w-[25rem]">
                         <h2 className=" text-title-color flex text-center subpixel-antialiased font-bold p-8 font-title-font text-title-font-size">
                             Entre em contato com a gente
                         </h2>
