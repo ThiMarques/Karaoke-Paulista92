@@ -2,5 +2,5 @@
     "compilerOptions": {
         "jsx": "react-jsx"
       }, 
-        "include": ["**/*.jsx", "**/*.jpg", "src/index.js", "src/App.jsx", "src/Home.tsx"]
+        "include": ["**/*.jsx", "**/*.jpg", "src/@types", "src/png.d.ts", "src/index.js", "src/App.jsx", "src/Home.tsx", "src/Screens/Home.tsx"]
 }
