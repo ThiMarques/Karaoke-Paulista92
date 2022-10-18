@@ -57,8 +57,8 @@ function CreateAdModal() {
                             <ToggleGroup.Root 
                                 type="multiple"
                                 className="grid grid-cols-4 gap-2"
-                                value={weekDays}
-                                onValueChange={setWeekDays}
+                                // value={weekDays}
+                                // onValueChange={setWeekDays}
                             >
                                 <ToggleGroup.Item 
                                     value="0"
