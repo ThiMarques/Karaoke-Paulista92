@@ -1,7 +1,14 @@
 import Header from '../Components/indexHome'
 import Footer from './Footer';
+import MakeReservation from '../Components/makeReservation'
+
+import CreateAdBanner from '../Components/Form/CreateAdBanner';
+import CreateAdModal from '../Components/Form/CreateAdModal'
+
+import * as Dialog from '@radix-ui/react-dialog';
 
 import amigosKaraoke from './../assets/amigosKaraoke.png'  
+
 
 function Home() {
 
@@ -25,13 +32,12 @@ function Home() {
                         <br />
                         Salas exclusivas aos grupos, com ar condicionado, iluminação personalizada, atendimento de bar e repertório contendo canções tanto nacionas quanto internacionais.
                     </p>
-                    <button className="bg-base-color text-text-color-light h-14 inline-flex items-center py-0 px-8 rounded-[0.25rem] font-medium text-subtitle-font-size font-body-font transition hover:bg-base-color-alt ">
-                        <span className="text-white">
-                            Faça já a sua reserva conosco.
-                        </span>
-                    </button>
                 </div>
             </div>
+            <Dialog.Root>
+                <CreateAdBanner />
+                <CreateAdModal />
+            </Dialog.Root>
         </section>
         <Footer />
         </div>

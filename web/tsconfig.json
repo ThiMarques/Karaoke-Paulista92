@@ -1,6 +1,8 @@
 { 
     "compilerOptions": {
-        "jsx": "react-jsx"
+        "jsx": "react-jsx",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
       }, 
-        "include": ["**/*.jsx", "**/*.jpg", "src/@types", "src/png.d.ts", "src/index.js", "src/App.jsx", "src/Home.tsx", "src/Screens/Home.tsx"]
+        "include": ["**/*.jsx", "**/*.jpg", "src/@types", "src/png.d.ts", "src/index.js", "src/App.tsx", "src/Home.tsx", "src/Screens/Home.tsx", "src/Components/makeReservation.tsx"],
 }
