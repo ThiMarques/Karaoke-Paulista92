@@ -22,7 +22,7 @@ function Promotions() {
                 </div>    
                 <div className="mx-6 text-center">
                     <h2 className=" text-title-color font-bold text-title-font-size font-title-font subpixel-antialiased text-center mb-4">Promoções</h2>
-                    <p className="text-text-color">
+                    <p className="text-text-color ">
                         Faça sua festa, festa de aniversario, happy hour, confraternização, etc, no melhor karaokê de São Paulo.
                     </p>
                     <h2 className="text-title-color font-bold text-title-font-size font-title-font subpixel-antialiased text-center mb-4">Pacote Especial</h2>

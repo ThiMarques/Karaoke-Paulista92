@@ -23,7 +23,7 @@ function App() {
   const [test, setTest] = useState<Test[]>([])
   
   useEffect(() => {
-    axios('http://localhost:9000/testAPI')
+    axios('https://karaokepaulista.free.beeceptor.com/123')
       .then(response => {
         setTest(response.data)
       })

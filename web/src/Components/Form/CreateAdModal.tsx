@@ -1,19 +1,44 @@
 import * as Dialog from '@radix-ui/react-dialog';
 import * as ToggleGroup from '@radix-ui/react-toggle-group';
+import axios from 'axios';
 
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 
 import Input from './Input';
 
-interface Room {
-    id: String;
-    room: String
-}
+// interface Room {
+//     id: String;
+//     room: String
+// }
 
 function CreateAdModal() {
 
-    const [rooms, setRooms] = useState<Room[]>([]);
+    const [rooms, setRooms] = useState<String[]>([]);
     const [weekDays, setWeekDays] = useState<String[]>([]);
+
+    async function handleCreateReserve(event: FormEvent) {
+        event.preventDefault()
+
+        const formData = new FormData(event.target as HTMLFormElement)
+        const data = Object.fromEntries(formData) //erro
+
+        if(!data.name){
+            return
+        }
+
+        try {
+            await axios.post('https://karaokepaulista.free.beeceptor.com/new-reserve'), {
+                name: data.name,
+                email: data.email,
+            }
+            
+            alert('Feita a reserva!')
+        } catch (err) {
+            console.log(err)
+            alert('Erro ao fazer a reserva!')
+        }
+
+    }
 
     return(
         <Dialog.Portal>
@@ -22,7 +47,7 @@ function CreateAdModal() {
             <Dialog.Content className="fixed bg-background-color py-8 px-10 text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg w-[480px] shadow-lg shadow-black/25 ">
                 <Dialog.Title className='text-3xl font-black'>Fazer uma reserva</Dialog.Title>
 
-                <form action="" className="mt-8 flex flex-col gap-4">
+                <form action="" onSubmit={handleCreateReserve} className="mt-8 flex flex-col gap-4">
                     <div className="flex flex-col gap-2">
                         <label htmlFor="name">Qual o seu nome?</label>
                         <Input name='name' id='name' placeholder='Coloque o seu nome aqui'/>
@@ -33,21 +58,48 @@ function CreateAdModal() {
                         <Input name='email' id='email' placeholder='Coloque o seu email aqui'/>
                     </div>
 
-                    <div>
-                        <label htmlFor="room">Qual sala você gostaria de reservar?</label>
-                        <select 
-                            name='room' 
-                            id='room' 
+                    <div className="grid flex-col gap-2">
+                        <label htmlFor="rooms">Qual sala você gostaria de reservar?</label>
+                        <ToggleGroup.Root 
+                            type='single'  
                             className="bg-zinc-900 py-3 px-4 rounded text-sm placeholder:text-zinc-500 appearance-none" 
-                            defaultValue=""
+                            // value={rooms} erro
+                            // onValueChange={setRooms} erro
                         >
-                            <option disabled value="">Selecione a sala que você quer reservar</option>
+                            <ToggleGroup.Item 
+                                value="03"
+                                title='Sala 03'
+                                className={`w-8 h-8 rounded ${rooms.includes('R3') ? 'bg-base-color' : 'bg-zinc-900'}`}
+                            >
+                                Sala 03
+                            </ToggleGroup.Item>
 
-                            {/* {rooms.map(room => {
-                                return <option key={room.id} value={room.id}>{room.room}</option>
-                            })} */}
+                            <ToggleGroup.Item 
+                                value="04"
+                                title='Sala 04'
+                                className={`w-8 h-8 rounded ${rooms.includes('4') ? 'bg-base-color' : 'bg-zinc-900'}`}
+                            >
+                                Sala 04
+                            </ToggleGroup.Item>
 
-                        </select>
+                            <ToggleGroup.Item 
+                                value="06"
+                                title='Sala 06'
+                                className={`w-8 h-8 rounded ${rooms.includes('6') ? 'bg-base-color' : 'bg-zinc-900'}`}
+                            >
+                                Sala 06
+                            </ToggleGroup.Item>
+
+                            <ToggleGroup.Item 
+                                value="07"
+                                title='Sala 07'
+                                className={`w-8 h-8 rounded ${rooms.includes('7') ? 'bg-base-color' : 'bg-zinc-900'}`}
+                            >
+                                Sala 07
+                            </ToggleGroup.Item>
+                            
+
+                        </ToggleGroup.Root>
                     </div>
 
                     <div className='flex gap-6'>
@@ -57,8 +109,8 @@ function CreateAdModal() {
                             <ToggleGroup.Root 
                                 type="multiple"
                                 className="grid grid-cols-4 gap-2"
-                                // value={weekDays}
-                                // onValueChange={setWeekDays}
+                                // value={weekDays} erro
+                                onValueChange={setWeekDays}
                             >
                                 <ToggleGroup.Item 
                                     value="0"

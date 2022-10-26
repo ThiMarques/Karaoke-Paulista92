@@ -32,12 +32,19 @@ function Home() {
                         <br />
                         Salas exclusivas aos grupos, com ar condicionado, iluminação personalizada, atendimento de bar e repertório contendo canções tanto nacionas quanto internacionais.
                     </p>
+                    <a 
+                        href="/contact"
+                        className="bg-base-color text-text-color-light h-14 inline-flex items-center py-0 px-8 mr-[0.625rem] rounded-[0.25rem] font-medium text-2xl font-body-font transition hover:bg-base-color-alt "
+                        type='button'
+                    >
+                        Faça já a sua reserva
+                    </a>
                 </div>
             </div>
-            <Dialog.Root>
+            {/* <Dialog.Root>
                 <CreateAdBanner />
                 <CreateAdModal />
-            </Dialog.Root>
+            </Dialog.Root> */}
         </section>
         <Footer />
         </div>
