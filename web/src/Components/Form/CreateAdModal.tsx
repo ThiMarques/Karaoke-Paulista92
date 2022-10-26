@@ -16,29 +16,29 @@ function CreateAdModal() {
     const [rooms, setRooms] = useState<String[]>([]);
     const [weekDays, setWeekDays] = useState<String[]>([]);
 
-    async function handleCreateReserve(event: FormEvent) {
-        event.preventDefault()
+    // async function handleCreateReserve(event: FormEvent) {
+    //     event.preventDefault()
 
-        const formData = new FormData(event.target as HTMLFormElement)
-        const data = Object.fromEntries(formData) //erro
+    //     const formData = new FormData(event.target as HTMLFormElement)
+    //     // const data = Object.fromEntries(formData) //erro
 
-        if(!data.name){
-            return
-        }
+    //     if(!data.name){
+    //         return
+    //     }
 
-        try {
-            await axios.post('https://karaokepaulista.free.beeceptor.com/new-reserve'), {
-                name: data.name,
-                email: data.email,
-            }
+    //     try {
+    //         await axios.post('https://karaokepaulista.free.beeceptor.com/new-reserve'), {
+    //             name: data.name,
+    //             email: data.email,
+    //         }
             
-            alert('Feita a reserva!')
-        } catch (err) {
-            console.log(err)
-            alert('Erro ao fazer a reserva!')
-        }
+    //         alert('Feita a reserva!')
+    //     } catch (err) {
+    //         console.log(err)
+    //         alert('Erro ao fazer a reserva!')
+    //     }
 
-    }
+    // }
 
     return(
         <Dialog.Portal>
@@ -47,7 +47,7 @@ function CreateAdModal() {
             <Dialog.Content className="fixed bg-background-color py-8 px-10 text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg w-[480px] shadow-lg shadow-black/25 ">
                 <Dialog.Title className='text-3xl font-black'>Fazer uma reserva</Dialog.Title>
 
-                <form action="" onSubmit={handleCreateReserve} className="mt-8 flex flex-col gap-4">
+                <form action="" /*onSubmit={handleCreateReserve}*/ className="mt-8 flex flex-col gap-4">
                     <div className="flex flex-col gap-2">
                         <label htmlFor="name">Qual o seu nome?</label>
                         <Input name='name' id='name' placeholder='Coloque o seu nome aqui'/>
