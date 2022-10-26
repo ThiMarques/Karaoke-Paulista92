@@ -1,11 +1,8 @@
 import Header from '../Components/indexHome'
 import Footer from './Footer';
-import MakeReservation from '../Components/makeReservation'
 
 import CreateAdBanner from '../Components/Form/CreateAdBanner';
 import CreateAdModal from '../Components/Form/CreateAdModal'
-
-import * as Dialog from '@radix-ui/react-dialog';
 
 import amigosKaraoke from './../assets/amigosKaraoke.png'  
 
