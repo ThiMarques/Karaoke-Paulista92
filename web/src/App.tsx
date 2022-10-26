@@ -20,14 +20,14 @@ interface Test {
 
 function App() {
 
-  const [test, setTest] = useState<Test[]>([])
+  // const [test, setTest] = useState<Test[]>([])
   
-  useEffect(() => {
-    axios('https://karaokepaulista.free.beeceptor.com/123')
-      .then(response => {
-        setTest(response.data)
-      })
-  })
+  // useEffect(() => {
+  //   axios('https://karaokepaulista.free.beeceptor.com/123')
+  //     .then(response => {
+  //       setTest(response.data)
+  //     })
+  // })
   
   return (
     <Router>  
