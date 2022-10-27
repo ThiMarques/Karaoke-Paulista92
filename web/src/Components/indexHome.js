@@ -7,7 +7,7 @@ function Header() {
 
     return (
         <div className="App bg-background-color text-text-color font-normal text-subtitle-font-size font-body-font subpixel-antialiased">
-            <header id="header" className="text-title-color grid top-0 left-0 z-[100] w-full desktop:max-w-lg desktop:text-center desktop:mx-auto">
+            <header id="header" className="text-title-color grid top-0 left-0 z-[100] w-full desktop:text-center desktop:mx-auto">
                 <nav className="h-[4.5rem] flex items-center justify-between w-full mx-6 desktop:max-w-[1120px] desktop:mx-auto desktop:space-x-[30rem]">
                     <Link to="/" className="text-title-color font-bold text-[1.31rem] font-title-font ">Karaoke Paulista</Link>
 
